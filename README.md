@@ -26,59 +26,49 @@ This is a **fully responsive and feature-rich Hostel Booking WebApp frontend** b
 ## 📂 Folder Structure
 
 ├── hostel-booking-webapp
-├── next
-├── app
-│   ├── about
+HOST/
+├── app/
+│   ├── cookie-policy/
 │   │   └── page.tsx
-│   ├── book-room
+│   ├── faq/
 │   │   └── page.tsx
-│   ├── contact
+│   ├── privacypolicy/
 │   │   └── page.tsx
-│   ├── facilities
+│   ├── sitemap/
 │   │   └── page.tsx
-│   ├── gallery
+│   ├── termsofservice/
 │   │   └── page.tsx
-│   ├── login
-│   │   └── page.tsx
-│   ├── register
-│   │   └── page.tsx
-│   └── rooms
-│       └── [id]
-│           └── page.tsx
-├── globals.css
-├── layout.tex
-├── page.tex
-├── tailwind.config.ts
-├── components
-│   ├── ui
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/
+│   ├── amenities-section/
+│   ├── auth-modal.tex
 │   ├── booking-form.tex
-│   ├── booking-steps.tex
-│   ├── facilities.tex
-│   ├── featured-rooms...
-│   ├── hero-section.tex
-│   ├── room-amenities...
-│   ├── room-filters.tex
-│   ├── room-gallery.tex
-│   ├── site-footer.tex
-│   ├── site-header.tex
-│   ├── testimonials.tex
-│   ├── theme-provider...
-│   └── theme-toggle.tex
-├── hooks
-├── Image
-├── lib
-├── node_modules
-├── public
-├── styles
+│   ├── contact-section/
+│   ├── dashboard.tex
+│   ├── feature-card.tex
+│   ├── footer.tex
+│   ├── landing-page.tex
+│   ├── navbar.tex
+│   ├── pricing-section/
+│   ├── room-listing.tex
+│   ├── rooms-section/
+│   ├── theme-provider/
+│   └── user-profile.tex
+├── hooks/
+├── lib/
+├── public/
+├── styles/
 ├── .gitignore
 ├── components.json
-├── next-env.d.ts
 ├── next.config.mjs
-├── package-lock.json
 ├── package.json
 ├── pnpm-lock.yaml
 ├── postcss.config.mjs
-└── tsconfig.json
+├── tailwind.config.ts
+└── tsconfig.jsonn
 
 ---
 
@@ -106,9 +96,9 @@ This is a **fully responsive and feature-rich Hostel Booking WebApp frontend** b
 ```sh
 1️⃣ Clone the repository:  
 
-git clone https://github.com/rahulpatel51/Hostel-Booking---WebApp.git
+git clone https://github.com/rahulpatel51/Hostel-Booking---WebApp-2.git
 2️⃣ Navigate to the project directory:
-cd hostel-booking-webapp
+cd hostel-booking-webapp-2
 
 3️⃣ Install dependencies:
 npm install
