@@ -11,9 +11,9 @@ import { CalendarDays, Building2, AlertCircle } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 export default function BookingForm() {
-  const [bookingStatus, setBookingStatus] = useState(null)
+  const [bookingStatus, setBookingStatus] = useState<"success" | null>(null)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     setBookingStatus("success")
     // In a real app, you would submit the form data to your backend here
@@ -49,7 +49,10 @@ export default function BookingForm() {
               </Alert>
             </CardContent>
             <CardFooter>
-              <Button onClick={() => document.querySelector('[data-value="new"]').click()}>Make a New Booking</Button>
+              <Button onClick={() => {
+                const newTab = document.querySelector('[data-value="new"]');
+                if (newTab instanceof HTMLElement) newTab.click();
+              }}>Make a New Booking</Button>
             </CardFooter>
           </Card>
         </TabsContent>
